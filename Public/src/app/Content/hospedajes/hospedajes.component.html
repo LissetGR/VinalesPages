@@ -1,0 +1,79 @@
+<div>  
+    <div class="seccion1">
+        <div class="imagen"></div>
+        <div class="busqueda">
+            <div class="circulo"></div>
+            <h3>Filtrar búsqueda</h3>  
+             <div>
+                <div class="search">
+                    <nz-input-group nzSearch>
+                        <input type="text" [(ngModel)]="nombreABuscar" (keyup)="buscarHospedajes()" nz-input placeholder="Nombre a buscar" />
+                    </nz-input-group>
+                </div>
+
+                <div class="estrellas">
+                    <h4>Cantidad de estrellas:</h4>
+                    <nz-rate [(ngModel)]="estrellasABuscar" (click)="buscarHospedajes()"></nz-rate>
+                </div>     
+
+            </div>             
+            <div class="resultados">
+                <h3>Cantidad de resultados:</h3>
+                <div class="resp">
+                    <!-- <nz-empty *ngIf="vacia==true; else resultados" nzNotFoundImage="simple"></nz-empty> 
+                    <ng-template #resultados> <h1>{{cantidadResultados}}</h1> </ng-template> -->
+                    <h1>{{cantidadResultados}}</h1> 
+                </div>
+            </div>      
+        </div>     
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloremque dignissimos magnam accusantium error quisquam possimus dolorem? Vel quae cupiditate officiis asperiores hic. At illo tenetur omnis vitae sit natus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus maiores sapiente maxime magnam iusto reprehenderit molestias consequatur qui dolor vel provident odit laborum, repellat quidem facere sequi animi. Alias!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci incidunt animi reprehenderit repellat assumenda officia commodi harum eligendi libero eum. Odit ducimus error tempora possimus maiores. Voluptates quo facilis qui.
+        </p>
+    </div>
+    
+    
+
+    <div class="seccion2">
+        <h1 id="title">Haga sus reservas y disfrute de nuestras ofertas</h1> 
+         <div class="hospedajes">
+            <div class="one-div" *ngFor="let hospedaje of hospedajes">
+                <div class="img">
+                    <img src="./../../../assets/{{hospedaje.nombre_imagen}}.jpg" class="fondoR">
+                    <div class="etiqueta" >
+                       <p  *ngIf="hospedaje.disponible>0;else noDisponible"  [ngClass]="'available'"> Available</p>
+                       <ng-template  #noDisponible><p [ngClass]="'unavailable'"> Unavailable </p></ng-template>
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>{{hospedaje.nombre_hospedaje}}</h1>
+                    <div class="dir">
+                        <span nz-icon nzType="environment" nzTheme="outline"></span><p>Dirección: {{hospedaje.direccion}}</p>
+                    </div>       
+                    <div class="precio">
+                        <span nz-icon nzType="dollar-circle" nzTheme="outline"></span><h4>Precio: {{hospedaje.precio_noche}}</h4>
+                    </div> 
+                    <div class="estrellasDiv">
+                        <nz-rate [ngModel]=hospedaje.calificacion nzDisabled></nz-rate>
+                    </div>  
+                    <div class="menu">
+                        <div >
+                            <span nz-icon nzType="info" nzTheme="outline"></span><h6>Info</h6>
+                        </div>
+                        <div>
+                            <span nz-icon nzType="tag" nzTheme="outline"></span><h6>Reservar</h6>
+                        </div>   
+                    </div>                  
+                </div>
+            </div> 
+         </div>
+    </div>
+    
+    <div class="volver invisible" *ngIf="banderaBusqueda" ngClass="invisible">
+        <div>
+            <button class="btn" (click)="virarAtrasBusqueda()">Ver Todos</button>
+        </div>
+    </div>
+
+</div>
+

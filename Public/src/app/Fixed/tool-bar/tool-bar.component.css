@@ -1,0 +1,76 @@
+.tool{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+}
+.tool h1{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* lineado doble */
+.botones h1 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #121010;
+    margin: 10px;
+    margin-left: 50px;
+    width: 5rem;
+    }
+    .botones h1:before,
+    .botones h1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transition: left .8s;
+    }
+    .botones h1:hover:before {
+    left: 0;
+    }
+    .botones h1:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: #333;
+    transition: right .8s;
+    }
+    .botones h1:hover:after {
+    right: 0;
+    }
+      
+    .botones:active {
+        transform: scale(0.9);
+    } 
+    
+/* codigo para un underline */
+/* 
+.botones h1 {
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 50px;
+    width: 5rem;
+    }
+    .botones h1:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+    .botones h1:hover:after {
+    width: 100%;
+    background: #333;
+    } */

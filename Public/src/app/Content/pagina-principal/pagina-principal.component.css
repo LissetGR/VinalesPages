@@ -1,0 +1,345 @@
+*{
+    user-select: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.seccion1{
+    background-image: url("..//..//..//assets/PaginaPrincipal.jpg");
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.seccion1 h1 ,p {
+    color: white;
+}
+.seccion1 p{
+    margin-top: -2rem;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.seccion1 h1{ 
+    font-size: 70px;
+}
+
+.info{
+    margin: 1rem;
+    padding: 20px;
+    align-self: last baseline;
+}
+
+.seccion2{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.seccion2 h1{
+   margin-top: 3rem;
+   font-size: 50px;
+   color: black;
+}
+
+.text{
+    width: 50rem;
+}
+.text p{
+   color: black;
+   font-size: 18px;
+   margin: 2rem;
+}
+
+.seccion3{
+    display: flex;
+    margin-top: 5rem;
+    /* margin-bottom: 8rem; */
+    align-items: center;
+}
+
+.seccion3 .img{
+    height: 18rem;
+    width: 25rem;
+    margin-left: 10%;
+    margin-right: 4%;
+    border: solid 1px gray;
+}
+.seccion3 .text{
+    width: 50rem;
+}
+
+.seccion3 .text p{
+    margin: 1rem;
+  
+}
+
+.img div img{
+    height: 20rem;
+    width: 30rem;
+    object-fit: cover;
+}
+
+[nz-carousel-content] {
+   height: 160px; 
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+
+h3 {
+    color: #fff;
+    margin-bottom: 0;
+    user-select: none;
+  }
+
+.seccion4{
+    display: flex;
+    margin: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+    /* background-color: rgba(203, 201, 201, 0.325); */
+    padding: 2rem;
+    /* box-shadow: 1px 1px 10px 1px rgb(126, 125, 125);
+    border-radius: 15px; */
+ }
+
+.vias{
+  width: 45rem;
+  margin: 2rem;
+  align-self: center;
+}
+
+.vias p{
+    font-size: 18px;
+}
+.seccion4 div p{
+    color: black;
+}
+
+ #title {
+    text-align: center;
+    font-size: 50px;
+ }
+
+
+.ofertas{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 40rem;
+   margin-left: 5%;  
+}
+
+.ofertas a {
+    height: 14rem;
+    width: 14rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1%;
+    box-shadow: 5px 5px 5px 0 gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ofertas a::before,
+  .ofertas a:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.184);
+    transition: all 0.5s;
+  }
+  
+  a.hospedajes::before , a.bares::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  a.hospedajes::after , a.bares::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+
+  a.restaurantes::before , a.entretenimiento::before{
+    bottom: 0;
+    right: 0;
+    border-radius:  100% 0 15px 0;
+  }
+
+  a.restaurantes::after , a.entretenimiento::after {
+    top: 0;
+    left: 0;
+    border-radius: 15px  0 100% 0;
+  }
+  
+  
+  .ofertas a:hover::before,
+  .ofertas a:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    transition: all 0.5s;
+  }
+  
+  a.hospedajes:hover:after {
+    content: "Hospedajes";
+  } 
+  a.restaurantes:hover:after {
+    content: "Restaurantes";
+  }
+
+  a.entretenimiento:hover:after {
+    content: "Entretenimiento";
+  }
+  
+  a.bares:hover:after {
+    content: "Bares";
+  }
+  .ofertas a{
+    color: black;
+  }
+
+ .hospedajes{
+    background-image: url("../../../assets/hospedajes.jpg");
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+ }
+
+ a.hospedajes:active{
+    box-shadow: none;
+ }
+ .bares{
+    background: url("../../../assets/bar3j.jpg");
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+ }
+ .restaurantes{
+    background-image: url("../../../assets/Restaurantes.jpg");
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+ }
+ a.restaurantes:active{
+    box-shadow: none;
+ }
+ .entretenimiento{
+    background-image: url("../../../assets/Entretenimiento.jpg");
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+ }
+ a.entretenimiento:active{
+    box-shadow: none;
+ }
+
+ .seccion5{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60.1rem;
+  margin: auto;
+  margin-top: 7rem;
+ }
+ 
+.container5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid .3px rgb(214, 214, 214);
+  margin-bottom: 4rem;
+  background-color: rgb(235, 232, 232);
+}
+.fondoTabaco{
+  height: 15rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.One{
+  background-image: url("./../../../assets/tabaco.jpg");
+}
+.Two{
+  background-image: url("./../../../assets/tabacoTwo.jpg");
+}
+.Three{
+  background-image: url("./../../../assets/tabacoThree.jpg");
+}
+.infoTabaco{
+  margin: auto;
+ 
+}
+
+.infoTabaco p{
+  width: 20rem;
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+ }
+
+ .seccion5 h1{
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+ }
+
+ @media screen and (max-width:1120px) {
+    .seccion4{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ofertas{
+        margin-top: 3rem;
+    }
+    .seccion3{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seccion3 .text{
+       margin: 2rem;
+    }
+ }
+
+ @media screen and (max-width:980px) {
+  .seccion5{
+    width: fit-content;
+  }
+  .container5{
+    border: none;
+    background-color: white ;
+  }
+  .fondoTabaco ,.infoTabaco{
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:1257px) {
+  .seccion4{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.seccion6{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: -6rem;
+  height: 40rem;
+  background-image: url("./../../../assets/Vinales.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

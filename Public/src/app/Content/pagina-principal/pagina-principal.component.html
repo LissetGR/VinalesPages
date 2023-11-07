@@ -1,0 +1,82 @@
+<div>
+
+    <div class="seccion1">
+        <div class="info">
+            <h1>Viñales</h1>
+            <p>Un paraíso natural</p>
+        </div>
+    </div>
+    
+
+
+    <div class="seccion2">
+        <div class="text">
+            <p>El Parque Nacional de Viñales, también conocido como Valle de Viñales, es sin lugar a dudas uno de los paisajes naturales más espectaculares de toda Cuba.
+                Se trata de un valle declarado Patrimonio Mundial por la UNESCO desde 1999; un paisaje exclusivo enclavado en la Sierra de los Órganos, donde podrás ver los famosos mogotes, 
+                pequeños montes escarpados de piedra caliza con cimas redondeadas, 
+                un lugar perfecto tanto si eres un amante de la escalada como si lo que quieres es contemplar las emblemáticas plantaciones de tabaco cubanas.
+            </p>
+        </div>
+        <h1>¿Qué es Viñales?</h1>
+    </div>
+
+
+    <div class="seccion3">
+        <div class="img">
+            <nz-carousel nzAutoPlay>
+                <div nz-carousel-content *ngFor="let index of arrayCarruselPP">
+                    <img src="../../../assets/Campesino{{index}}.jpg">
+                </div>
+            </nz-carousel>
+        </div>
+        <div class="text">
+            <p> Cuenta con el mejor ejemplo de valle kárstico que existe en toda la isla. Este envidiable paisaje tiene su origen durante el Cretácico, hace unos 100 millones de años. 
+                Desde entonces el agua fue modelando la roca, tanto en superficie como en el subsuelo, conformando una orografía característica provista de grandes cuevas y los propios mogotes que son una de sus principales señas de identidad. Gran parte de dichas cavernas terminaron por derrumbarse dejando únicamente las características paredes desgastadas que pueden verse hoy en día. 
+                Aquí se encuentra la Gran Caverna de Santo Tomás, el mayor sistema de grutas de todo Cuba.</p>
+        </div>
+    </div>
+
+
+    <div class="seccion4">
+        <div class="vias">
+           <h1 id="title">Planifica tu viaje aquí</h1>
+           <p>Para llegar a Viñales puedes rentar un auto, los mejores precios los encontrarás en Rentacar. Otra opción son los taxis, oficiales o particulares.
+               El precio oscila en los 120 CUC, de cualquier forma es mejor preguntar antes.        
+               Una visita guiada que incluye comida y el paseo por la Cueva del indio con transporte es mucho más económica.          
+               También está el viaje en ómnibus Víazul con salida dos veces al día desde la Estación de Autobuses de La Habana, a las 09:00 y 14:30 horas.
+           </p>
+       </div>  
+
+           <div class="ofertas">
+               <a [routerLink]="['/Hospedajes']" class="hospedajes"></a>
+               <a [routerLink]="['/Restaurantes']" class="restaurantes"></a>
+               <a [routerLink]="['/Entretenimiento']" class="entretenimiento"></a>       
+               <a [routerLink]="['/Bares']" class="bares"></a>        
+       </div>
+   </div>
+
+   <div class="seccion5">
+        <h1>«De la semilla hasta el humo»</h1>
+        <div class="container5">
+            <div class="fondoTabaco One"></div>
+            <div class="infoTabaco">
+                <p>Si es de los que gusta fumarse un genuino «puro» cubano, el Valle de Viñales es la opción ideal para adentrarse en todo lo concerniente a su producción, arte que ha sido transmitido de generación en generación.</p>
+            </div>
+            <div class="fondoTabaco Two"></div>
+            <div class="infoTabaco 2">
+                <p> El empleo de métodos tradicionales para el cultivo y procesamiento del tabaco singularizan la vida diaria del campesino «viñalero». </p>
+            </div>
+            <div class="fondoTabaco Three"></div>
+            <div class="infoTabaco 3">
+                <p>Las vivencias, únicas y sorprendentes conducen al vacacionista a una edificación singular: la Casa del Tabaco</p>
+            </div>
+        </div>
+        <h1>¿Listo para la gran aventura?</h1>
+   </div>
+  
+   <div class="seccion6"></div>
+
+</div>
+
+
+
